@@ -1,0 +1,18 @@
+{
+  "section": "حصيات الرموز (Format Specifiers)",
+  "details": [
+    {"symbol": "%d", "meaning": "طباعة رقم صحيح (Integer)"},
+    {"symbol": "%i", "meaning": "رقم صحيح (مشابه لـ %d)"},
+    {"symbol": "%c", "meaning": "طباعة حرف واحد فقط (Character)"},
+    {"symbol": "%f", "meaning": "طباعة رقم عشري (Float)"},
+    {"symbol": "%lf", "meaning": "طباعة رقم عشري مزدوج الدقة (Double)"},
+    {"symbol": "%s", "meaning": "طباعة نص كامل (String)"},
+    {"symbol": "%p", "meaning": "طباعة عنوان الذاكرة (Pointer) - أساس الأمن السيبراني"},
+    {"symbol": "%x", "meaning": "طباعة الرقم بالنظام السداسي عشري (Hexadecimal)"},
+    {"symbol": "%%", "meaning": "طباعة علامة المئوية نفسها"},
+    {"symbol": "\\n", "meaning": "سطر جديد (New Line)"},
+    {"symbol": "\\t", "meaning": "مسافة أفقية (Tab)"},
+    {"symbol": "\\a", "meaning": "إصدار صوت تنبيه (Alert/Bell)"}
+  ]
+}
+
