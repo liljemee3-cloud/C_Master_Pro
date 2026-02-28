@@ -1,5 +1,5 @@
 name: c_master_pro
-description: A new Flutter project for learning C.
+description: "موسوعة المحترف لتعلم لغة سي من الألف إلى الياء"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -18,7 +18,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  # سنضيف ملفات الدروس هنا لاحقاً
+
+  # هنا نربط ملفات العلوم التي أنشأتها لكي يراها التطبيق
   assets:
-    - assets/lessons/basics.json
-    
+    - basics.json
+    # إذا أنشأت ملفات أخرى أضفها هنا بنفس الطريقة
