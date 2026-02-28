@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(CMasterApp());
+
+class CMasterApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(), // اللون الأسود الذي يفضله المبرمجون
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  // قائمة الأقسام (الأزرار) من الألف إلى الياء
+  final List<Map<String, String>> sections = [
+    {"title": "1. مدخل الـ C (الهيكل)", "content": "تعلم #include <stdio.h> ودالة main"},
+    {"title": "2. حصيات الرموز (Format Specifiers)", "content": "%d للأرقام، %c للحروف، %f للكسور، \\n للسطر الجديد"},
+    {"title": "3. الخزائن (Variables)", "content": "تعلم int, char, float وحجز الذاكرة"},
+    {"title": "4. الأوامر (Input/Output)", "content": "إتقان printf و scanf بالتفصيل"},
+    {"title": "5. طريق القرار (Conditions)", "content": "خوارزمية if, else, switch"},
+    {"title": "6. دوائر التكرار (Loops)", "content": "شرح for, while, do-while"},
+    {"title": "7. مستودع المصفوفات (Arrays)", "content": "تخزين البيانات المتسلسلة"},
+    {"title": "8. العناوين (Pointers)", "content": "التعامل مع الذاكرة مباشرة & و *"},
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("C-Master Pro: من الألف إلى الياء")),
+      body: ListView.builder(
+        itemCount: sections.length,
+        itemBuilder: (context, index) {
+          return Card(
+            margin: EdgeInsets.all(8),
+            child: ListTile(
+              leading: CircleAvatar(child: Text("${index + 1}")),
+              title: Text(sections[index]['title']!),
+              subtitle: Text("اضغط لفتح الشرح والكود"),
+              onTap: () {
+                // سنبرمج فتح الدروس هنا في الخطوة القادمة
+              },
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
